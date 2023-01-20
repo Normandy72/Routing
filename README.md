@@ -76,3 +76,12 @@ $stateProvider
         ...
     });
 ```
+***
+#### _Summary_
+* `ui-router` uses independent concepts for URL mapping and UI state representation.
+* Configure ui-router in angular.config:
+    * provide alternate URL mapping with `$urlRouterProvider.otherwise('alternateURL');`;
+    * configure states with optional URLs using `$stateProvider.state('name', {url: '...', templateUrl: '...'})`.
+* Use `<ui-view>` tag as placeholder for state-based UI.
+* Use `ui-sref` attribute for constructing links and actions to configured states.
+***
